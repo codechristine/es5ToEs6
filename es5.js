@@ -10,10 +10,10 @@ var animals = [
 animalListing(animals, true);
 
 
-function animalListing( animalArray, listFoods){
-	if(listFoods===undefined){
-		listFoods = true;
-	}
+function animalListing( animalArray, listFoods=true){//the same as saying if listFoods is undefined, then pass in truthy value
+	// if(listFoods===undefined){
+	// 	listFoods = true;
+	// }
 	var outputArray = [];
 	for(var animalIndex = 0; animalIndex< animalArray.length; animalIndex++){
 		var thisAnimal = animalArray[animalIndex];
